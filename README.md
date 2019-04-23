@@ -1,5 +1,5 @@
-# SpeedyCado
-This is a test ecommerce site using React and deployed on AWS
+# Personal Website
+This is my personal website using React and deployed on AWS
 
 ## Technologies Used
 - Brew
