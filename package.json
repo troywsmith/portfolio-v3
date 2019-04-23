@@ -1,10 +1,11 @@
 {
-  "name": "speedycado",
+  "name": "thetroysmith.com",
   "version": "1.0.0",
-  "description": "SpeedyCado - Snacks & Drinks Delivered to your door.",
+  "description": "Troy Smith - Software Engineer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "open src/index.js",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },

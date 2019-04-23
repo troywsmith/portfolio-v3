@@ -54,16 +54,16 @@ def lambda_handler(event, context):
         print('Job Done')
 
         # Email developer with SNS
-        topic.publish(Subject="SpeedyCado Deployed",
-                      Message="SpeedyCado deployed successfully!")
+        topic.publish(Subject="Personal Website Deployed",
+                      Message="thetroysmith.com has been deployed successfully!")
 
         if job:
             codepipeline = boto3.client('codepipeline')
             codepipeline.put_job_success_result(jobId=job["id"])
 
     except:
-        topic.publish(Subject="SpeedyCado Deploy Failed",
-                      Message="The SpeedyCado deploy was not successfull.")
+        topic.publish(Subject="Personal Website Deploy Failed",
+                      Message="thetroysmith.com deploy was not successfull.")
         raise
 
     return "Hello from Lambda"
