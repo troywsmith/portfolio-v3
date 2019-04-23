@@ -1,0 +1,32 @@
+{
+  "name": "speedycado",
+  "version": "1.0.0",
+  "description": "SpeedyCado - Snacks & Drinks Delivered to your door.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troywsmith/speedycado.git"
+  },
+  "author": "Troy Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troywsmith/speedycado/issues"
+  },
+  "homepage": "https://github.com/troywsmith/speedycado#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}
