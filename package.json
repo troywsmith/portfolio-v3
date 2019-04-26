@@ -5,20 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "open src/index.js",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/troywsmith/speedycado.git"
+    "url": "git+https://github.com/troywsmith/thetroysmith.com.git"
   },
   "author": "Troy Smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/troywsmith/speedycado/issues"
+    "url": "https://github.com/troywsmith/thetroysmith.com/issues"
   },
-  "homepage": "https://github.com/troywsmith/speedycado#readme",
+  "homepage": "https://github.com/troywsmith/thetroysmith.com#readme",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
