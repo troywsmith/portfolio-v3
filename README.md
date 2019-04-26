@@ -9,3 +9,5 @@ This is my personal website using React and deployed on AWS
 - CSS
 - Font Awesome
 - Google Fonts
+- React
+- AWS
