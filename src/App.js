@@ -12,6 +12,7 @@ class App extends React.Component {
 
                 <main className="App-content">
                     <h1>Troy Smith</h1>
+                    <h2>TEST</h2>
                 </main>
 
                 <Footer />
