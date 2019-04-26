@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
+import '../styles/main.css';
 
 class App extends React.Component {
     render() {
@@ -12,7 +14,7 @@ class App extends React.Component {
                     <h1>Troy Smith</h1>
                 </main>
 
-                <h3>Footer</h3>
+                <Footer />
 
             </div >
         )

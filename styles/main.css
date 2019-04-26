@@ -1,231 +1,271 @@
-/*
-  Theme colors
-    All selectors with colors that would need
-    to be changed for theme changes
-*/
-
-/*
-  COLORS
-
-  Sky
-    rgb(52, 152, 219)
-
-  Dark Blue
-    rgb(44, 62, 80)
-
-  Grey
-    rgb(127, 140, 141)
-
-  Cloud
-    rgb(236, 240, 241)
-*/
-
-.background--skyBlue {
-  background-color: rgb(52, 152, 219);
-}
-
-.color--skyBlue {
-  color: rgb(52, 152, 219);
-}
-
-.color--cloud {
-  color: rgb(236, 240, 241);
-}
-
-.color--grey {
-  color: rgb(127, 140, 141);
-}
-
-.color--darkgrey {
-  color: rgb(44, 62, 80);
-}
-
-.section__example {
-  background-color: rgb(44, 62, 80);
-}
-
-/*
-  General Styles
-    These are styles to be inherited
-    through parent containers
-*/
-
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: 'Cardo', serif;
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: .1rem;
-}
-
-/*
-  Helpers
-*/
-
-.margin--none {
-  margin: 0;
-}
-
-.overflow--auto {
-  overflow: auto;
+  background: #f1f1f1;
+  font-family: MontSerrat,Tahoma,Arial,sans-serif
 }
 
 
-/*
-  Sections
-*/
+
+/* Sidebar  */
+.sidebar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 30%;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidebar * {
+  margin: 30px 0;
+}
+
+.sidebar .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.sidebar img {
+  width: 50%;
+  border-radius: 100px;
+}
+
+.sidebar button {
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #337ab7;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.sidebar button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+}
+
+.subject {
+  height: 200px;
+}
+
+/* Main Page Area  */
+
+.tabs {
+  text-align:center;
+}
+
+.tabs ul {
+  display: inline-block; 
+  padding: 0px 100px;
+  width: 100%;
+}
+
+.tabs ul > li {
+  width: 33%;
+}
+
+/* Inactive tab */
+.tabs ul > li > a {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.tabs ul > li > a:hover {
+  background-color: pink;
+}
+
+/* Active tab */
+.tabs ul > li.active > a,
+.tabs ul > li.active > a:hover,
+.tabs ul > li.active > a:focus {
+  border-bottom: black;
+  border-bottom-style: solid;
+}
+
+/* Disabled tab */
+.tabs ul > li.disabled > a {
+  background-color: lightgray;
+  color: darkgray;
+}
+
+.tab {
+  width: 90%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+.page {
+  display: block;
+  /* float: left; */
+  margin-left: 30%;
+  width: 70%;
+}
+
+.content {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.contentheader {
+  display: flex;
+}
+
+.contentheader h4 {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.contentheader a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 205);
+}
+
+.contentheader a:hover {
+  color: rgb(103, 103, 252);
+}
+
+.contentheader img {
+  height: 100px;
+  max-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .section {
-  font-size: 4.2rem;
-  min-height: 70vh;
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  text-align: left
 }
 
-.section--alignCentered {
-  text-align: center;
-}
-
-.section--description {
-  font-size: 2.8rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.section__description {
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  width: 50%;
-}
-
-.section__text--centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.section__exampleWrapper,
-.section__example {
-  display: inline-block;
-  height: 35rem;
-  width: 35rem;
-}
-
-.section__exampleWrapper {
-  margin-right: 4rem;
-}
-
-.section__example {
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
-.section__example:active {
-  transition: 0.05s all;
-  width: 34rem;
-  height: 34rem;
-}
-
-.section__exampleTitle{
-  font-size: 3.4rem;
-  text-align: center;
-  text-transform: uppercase;
+.card {
   width: 90%;
+  background: white;
+  padding: 30px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.section__exampleImage {
-  opacity: 0.25;
-  width: 250%;
-  margin-left: -50%;
-  margin-top: -50%;
+.cardheader {
+  display: flex;
 }
 
-/*
-  Header
-*/
-
-.section__heading--largest {
-  float: left;
-  font-size: 5rem;
-  margin-left: 2rem;
+.cardheader h4 {
+  padding-left: 20px;
+  margin-top: 20px;
 }
 
-.section--social {
-  float: right;
-  line-height: 10rem;
-  margin-right: 2rem;
-}
-
-.social {
-  margin-right: 0.75rem;
-}
-
-.socialWrapper:last-child .social {
-  margin-right: 0;
-}
-
-.socialWrapper {
-  display: inline-block;
-  font-size: 3rem;
-}
-
-
-/*
-  Modal
-*/
-
-.modal--closed {
-  display: none;
-}
-
-.modal--open {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-}
-
-.modal__closeButton {
-  position: absolute;
-  right: 2rem;
-  top: 5rem;
-  font-size: 4rem;
-  z-index: 1;
-  curson: pointer;
-}
-
-.modal__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 2.4rem;
-  padding: 2rem;
-  width: 66%;
-}
-
-.modal__link {
-  background-color: white;
-  border-radius: 4px;
-  padding: 0.4rem 1rem;
-  text-transform: uppercase;
+.cardheader a {
+  padding-left: 20px;
   text-decoration: none;
+  color: rgb(0, 0, 205);
 }
 
-.modal__image {
-  opacity: 0.2;
+.cardheader a:hover {
+  color: rgb(103, 103, 252);
+}
+
+.cardheader img {
+  height: 100px;
+  max-width: 200px;
+}
+
+.roledescription {
+  font-style: italic;
+}
+
+.descriptiondiv {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.skill {
+  text-align: center;
+  margin: 20px;
+}
+
+.skillpic {
+  width: 100px;
+  height: 80px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 800px;
+  }
+  .about {
+    width: 800px;
+  }
+}
+
+
+.project-details {
+  text-align: left;
 }
