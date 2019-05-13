@@ -6,6 +6,9 @@ import ReactDOM from 'react-dom';
 // Components
 import App from './App';
 
+// Style
+import '../styles/main.css'
+
 ReactDOM.render(
     <App />
     , document.getElementById('root')
