@@ -4,7 +4,11 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <h1>Header</h1>
+                <ul>
+                    <li>Sarnow Food Group</li>
+                    <li>Capital One</li>
+                    <li>Forex Trader</li>
+                </ul>
             </div>
         );
     }
